@@ -11,7 +11,7 @@ import { ORDER_PAY_RESET, ORDER_DELIVER_RESET } from '../constants/orderConstams
 
 
 const OrderScreen = ({match, history }) => {
-    const API = 'http://localhost:5000'
+    const API = 'https://tehilabackend.herokuapp.com/'
     const [sdkReady, setSdkReady] = useState(false)
     const dispatch = useDispatch()
     const orderId = match.params.id

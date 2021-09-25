@@ -11,7 +11,7 @@ import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
 
 const ProductEditScreen = ({ match, history }) => {
   const productId = match.params.id
-  const API = 'http://localhost:5000'
+  const API = 'https://tehilabackend.herokuapp.com/'
   const [name, setName] = useState('')
   const [price, setPrice] = useState(0)
   const [image, setImage] = useState('')

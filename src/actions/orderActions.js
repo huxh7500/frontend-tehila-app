@@ -23,7 +23,7 @@ import { logout } from './userActions'
 import { CART_CLEAR_ITEMS } from '../constants/cartConstants'
 
 
-const API = 'http://localhost:5000'
+const API = 'https://tehilabackend.herokuapp.com/'
 
 export const createOrder = (order) => async (dispatch, getState) => {
   try {

@@ -6,7 +6,7 @@ import {
     } from '../constants/cartConstants'
 import axios from 'axios'
 
-const API = 'http://localhost:5000'
+const API = 'https://tehilabackend.herokuapp.com/'
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
     const { data } = await axios.get(`${API}/api/products/${id}`)

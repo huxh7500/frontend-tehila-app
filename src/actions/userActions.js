@@ -28,7 +28,7 @@ import {ORDER_LIST_MY_RESET} from '../constants/orderConstams'
 
 import axios from 'axios'
 
-const API = 'http://localhost:5000'
+const API = 'https://tehilabackend.herokuapp.com/'
 
 export const login = (email, password) => async (dispatch)=>{
     try{
