@@ -9,7 +9,6 @@ import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
-import NotFoundScreen from './NotFoundScreen'
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -28,7 +27,6 @@ const HomeScreen = ({ match }) => {
   return (
     <div>
       <Meta />
-      {!products ? (
       <div>
       {!keyword ? (
         <ProductCarousel />
@@ -58,8 +56,7 @@ const HomeScreen = ({ match }) => {
           />
         </div>
       )}
-      </div>) :
-       (<NotFoundScreen/>)}
+      </div>
     </div>
   )
 }
